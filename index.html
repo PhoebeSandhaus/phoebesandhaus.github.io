@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phoebe Sandhaus · Astrophysicist</title>
+  <!-- EDIT: a one-sentence summary that search engines and link previews will show -->
+  <meta name="description" content="Phoebe Sandhaus is an astrophysicist and Ph.D. candidate at Penn State working on exoplanet modeling and planet formation. Research, publications, teaching, and service.">
+  <meta property="og:title" content="Phoebe Sandhaus · Astrophysicist">
+  <meta property="og:description" content="Research, publications, teaching, and service.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Apply the saved light/dark preference before paint to avoid a flash -->
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================== NAVIGATION ============================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark">PS</span>
+        <span class="brand-name">Phoebe Sandhaus</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================================ HERO ================================ -->
+    <section class="hero" id="top">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <!-- EDIT: your roles / identities -->
+          <p class="eyebrow reveal">Astrophysicist &nbsp;·&nbsp; Educator &nbsp;·&nbsp; Advocate</p>
+          <h1 class="reveal">Phoebe<br><em>Sandhaus</em></h1>
+          <!-- EDIT: one or two sentences about the questions that drive you -->
+          <p class="lede reveal">
+            I study <strong>exoplanets</strong> and <strong>planet formation</strong> to
+            <strong>understand our place in the universe</strong>, and I work to make
+            science more accessible to everyone who wants to take part in it.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#research">Explore my research</a>
+            <!-- EDIT: put your CV at assets/cv.pdf -->
+            <a class="btn btn-ghost" href="assets/cv.pdf" target="_blank" rel="noopener">
+              Download CV
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+            </a>
+          </div>
+        </div>
+        <figure class="portrait reveal">
+          <!-- EDIT: replace assets/headshot.svg with your photo, e.g. assets/headshot.jpg -->
+          <img src="assets/Headshot_2026.jpg" alt="Portrait of Phoebe Sandhaus" width="420" height="420">
+          <figcaption>
+            <!-- EDIT -->
+            <span class="dot"></span> Ph.D. Candidate, Penn State
+          </figcaption>
+        </figure>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ================================ ABOUT ================================ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <p class="section-kicker reveal">01 · About</p>
+          <h2 class="reveal">Lover of <em>exoplanets</em> and <em>equity</em>.</h2>
+          <!-- EDIT: 2–3 short paragraphs about who you are as a scientist -->
+          <p class="reveal">
+            Hi! I'm Phoebe and I'm a Ph.D. candidate in Astronomy and Astrophysics at Penn State, where I focus on
+            exoplanet modeling and planet formation simulations. My work combines
+            <em>N</em>-body simulations, orbital dynamics, and open-source software to answer
+            questions about how planets form and how we measure their properties.
+          </p>
+          <p class="reveal">
+            I'm a passionate advocate for increasing the accessibility of science, whether that
+            means rebuilding a research code in a language anyone can use or connecting
+            undergraduates with their first research project. I deeply value students, teaching, and
+            service just as much as novel research.
+          </p>
+        </div>
+
+        <aside class="glance card reveal" aria-label="At a glance">
+          <h3>At a glance</h3>
+          <dl>
+            <!-- EDIT -->
+            <div><dt>Currently</dt><dd>Ph.D. Candidate, Department of Astronomy and Astrophysics, Pennsylvania State University</dd></div>
+            <div><dt>Ph.D.</dt><dd>Astronomy and Astrophysics, Pennsylvania State University, expected 2027</dd></div>
+            <div><dt>M.S.</dt><dd>Astronomy and Astrophysics, Pennsylvania State University, 2022</dd></div>
+            <div><dt>B.S.</dt><dd>Physics, University of Maryland, Baltimore County, 2019</dd></div>
+            <div><dt>Based in</dt><dd>Troy, NY</dd></div>
+          </dl>
+          <h4>Research interests</h4>
+          <ul class="tags">
+            <li>Exoplanet modeling</li>
+            <li>Planet formation</li>
+            <li>Orbital dynamics</li>
+            <li><em>N</em>-body simulations</li>
+            <li>Open-source Python software</li>
+            <li>Astrobiology</li>
+          </ul>
+        </aside>
+      </div>
+      <div class="container stats reveal">
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Peer-reviewed papers</span></div>
+        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Semesters teaching</span></div>
+        <div class="stat"><span class="stat-num">11</span><span class="stat-label">Conference presentations</span></div>
+      </div>
+    </section>
+
+    <!-- =============================== RESEARCH =============================== -->
+    <section class="section section-tint" id="research">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker reveal">02 · Research</p>
+          <h2 class="reveal">Questions I'm <em>exploring</em></h2>
+          <p class="section-intro reveal">
+            My research asks how planets form and how we can best measure the ones we find.
+            I've approached it through three projects.
+          </p>
+        </header>
+
+        <div class="themes">
+          <article class="theme card reveal">
+            <div class="theme-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M4 34c6-14 10-14 14-4s8 10 12-4 8-14 14 0"/><path d="M4 42h40M4 6v36"/></svg>
+            </div>
+            <h3>EXOZIPPy: exoplanet modeling for everyone</h3>
+            <p>EXOFASTv2 is a prominent exoplanet modeling code, but it is written in the proprietary language IDL, which is a significant barrier for the community. I'm rebuilding it from the ground up in Python to increase accessibility and community involvement. Preliminary benchmarking shows consistent results with at least an order of magnitude speed increase. v1.0.0 release coming soon!</p>
+            <p class="theme-meta">2024 – present · with Jason Eastman, Harvard-Smithsonian Center for Astrophysics · <a href="https://github.com/jdeast/EXOZIPPy" target="_blank" rel="noopener">Code on GitHub</a></p>
+          </article>
+
+          <article class="theme card reveal">
+            <div class="theme-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><g transform="rotate(-20 24 24)"><g stroke-width="1.2"><ellipse cx="24" cy="24" rx="9" ry="5"/><ellipse cx="24" cy="24" rx="15.5" ry="9"/><ellipse cx="24" cy="24" rx="22" ry="13"/></g><g fill="currentColor"><circle cx="24" cy="24" r="3"/><circle cx="31.8" cy="26.5" r="1.6"/><circle cx="9.4" cy="20.9" r="2.2"/><circle cx="40.9" cy="15.6" r="1.8"/></g></g></svg>
+            </div>
+            <h3>Super-Earth formation and orbital dynamics</h3>
+            <p>I run <em>N</em>-body simulations to investigate how different initial conditions in planet formation, such as the presence of outer giant planets, affect the properties of the inner planets that form. Along the way, I wrote a publicly available addition to the Python package <a href="https://github.com/dtamayo/reboundx" target="_blank" rel="noopener">REBOUNDx</a> that calculates gas damping forces on bodies during a simulation.</p>
+            <p class="theme-meta">2020 – present · with Mariah MacDonald, The College of New Jersey · <a href="https://reboundx.readthedocs.io/en/latest/effects.html#gas-damping-timescale" target="_blank" rel="noopener">Read the Docs Code Description</a></p>
+          </article>
+
+          <article class="theme card reveal">
+            <div class="theme-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="17" r="12"/><circle cx="29" cy="21" r="3.5"/><path d="M4 38h12l4 5h8l4-5h12"/></svg>
+            </div>
+            <h3>Searching for planets around white dwarfs</h3>
+            <p>I analyzed archival white dwarf data from the Cosmic Origins Spectrograph on the Hubble Space Telescope, converting spectra into time-series photometry to search for the brief dimming of a transiting object. Injection-recovery tests showed we would have been able to detect transiting sub-Earth-sized objects around the white dwarfs in our sample.</p>
+            <p class="theme-meta">2013 – 2016 · with John H. Debes, Space Telescope Science Institute</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PUBLICATIONS ============================= -->
+    <section class="section" id="publications">
+      <div class="container">
+        <header class="section-head section-head-row">
+          <div>
+            <p class="section-kicker reveal">03 · Publications</p>
+            <h2 class="reveal">Selected <em>work</em></h2>
+          </div>
+          <div class="filters reveal" role="group" aria-label="Filter publications">
+            <button class="chip is-active" data-filter="all">All</button>
+            <button class="chip" data-filter="journal">Journal</button>
+            <button class="chip" data-filter="review">In review</button>
+            <button class="chip" data-filter="prep">In prep</button>
+          </div>
+        </header>
+
+        <!--
+          EDIT: one <li> per paper. Set data-type to journal, review, or prep.
+          Wrap your own name in <span class="me">…</span> to highlight it.
+          Delete any link you don't have.
+        -->
+        <ol class="pubs">
+          <li class="pub reveal" data-type="prep">
+            <span class="pub-year">In prep</span>
+            <div class="pub-body">
+              <h3 class="pub-title">EXOZIPPy: A Python translation of EXOFASTv2 to simultaneously model stars and planets</h3>
+              <p class="pub-authors"><span class="me">Sandhaus, P.</span>, Eastman, J., et al.</p>
+              <p class="pub-venue">In preparation.</p>
+              <div class="pub-links"><a href="https://github.com/jdeast/EXOZIPPy" target="_blank" rel="noopener">Code</a></div>
+            </div>
+          </li>
+
+          <li class="pub reveal" data-type="review">
+            <span class="pub-year">In review</span>
+            <div class="pub-body">
+              <h3 class="pub-title">Small Planets Forming in the Inner Disk Do Not Need Migration</h3>
+              <p class="pub-authors">MacDonald, M. G., <span class="me">Sandhaus, P.</span>, &amp; Brefka, L.</p>
+              <p class="pub-venue"><em>Research Notes of the AAS</em>, in review.</p>
+            </div>
+          </li>
+
+          <li class="pub reveal" data-type="review">
+            <span class="pub-year">In review</span>
+            <div class="pub-body">
+              <h3 class="pub-title">Resonance is Not More Prevalent Among Young, Close-in Planets</h3>
+              <p class="pub-authors">MacDonald, M. G., Brefka, L., <span class="me">Sandhaus, P.</span>, Pojar, K., &amp; Zeringue, M.</p>
+              <p class="pub-venue"><em>The Astrophysical Journal</em>, in review.</p>
+            </div>
+          </li>
+
+          <li class="pub reveal" data-type="journal">
+            <span class="pub-year">2026</span>
+            <div class="pub-body">
+              <h3 class="pub-title">Effects of pebble accretion isolation mass on observable exoplanet properties</h3>
+              <p class="pub-authors">Brefka, L., Dawson, R. I., MacDonald, M. G., <span class="me">Sandhaus, P.</span>, &amp; Ford, E. B.</p>
+              <p class="pub-venue"><em>Monthly Notices of the Royal Astronomical Society</em>, 552(1).</p>
+              <div class="pub-links"><a href="https://doi.org/10.1093/mnras/stag1555" target="_blank" rel="noopener">DOI</a><a href="https://arxiv.org/abs/2608.13639" target="_blank" rel="noopener">arXiv</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub reveal" data-type="journal">
+            <span class="pub-year">2025</span>
+            <div class="pub-body">
+              <h3 class="pub-title">Effects of Outer Giant Planets on In Situ Formation of Inner Super-Earths</h3>
+              <p class="pub-authors"><span class="me">Sandhaus, P.</span>, Dawson, R. I., MacDonald, M. G., Shakespeare, C. J., &amp; Morrison, S.</p>
+              <p class="pub-venue"><em>The Astrophysical Journal</em>, 990(1).</p>
+              <div class="pub-links"><a href="https://doi.org/10.3847/1538-4357/adf1a6" target="_blank" rel="noopener">DOI</a><a href="https://arxiv.org/abs/2608.20470" target="_blank" rel="noopener">arXiv</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub reveal" data-type="journal">
+            <span class="pub-year">2022</span>
+            <div class="pub-body">
+              <h3 class="pub-title">A Search for Radio Technosignatures at the Solar Gravitational Lens Targeting Alpha Centauri</h3>
+              <p class="pub-authors">Tusay, N., Huston, M. J., et al. (including <span class="me">Sandhaus, P.</span>)</p>
+              <p class="pub-venue"><em>The Astronomical Journal</em>, 164(3).</p>
+              <div class="pub-links">
+                <a href="https://doi.org/10.3847/1538-3881/ac8358" target="_blank" rel="noopener">DOI</a><a href="https://arxiv.org/abs/2206.14807" target="_blank" rel="noopener">arXiv</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub reveal" data-type="journal">
+            <span class="pub-year">2016</span>
+            <div class="pub-body">
+              <h3 class="pub-title">A Search for Short-Period Rocky Planets Around WDs with the Cosmic Origins Spectrograph (COS)</h3>
+              <p class="pub-authors"><span class="me">Sandhaus, P. H.</span>, Debes, J. H., Ely, J., Hines, D. C., &amp; Bourque, M.</p>
+              <p class="pub-venue"><em>The Astrophysical Journal</em>, 823(1).</p>
+              <div class="pub-links">
+                <a href="https://doi.org/10.3847/0004-637X/823/1/49" target="_blank" rel="noopener">DOI</a><a href="https://arxiv.org/abs/1604.03026" target="_blank" rel="noopener">arXiv</a>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+        <p class="more-link reveal">
+          <a href="https://orcid.org/0000-0002-6019-4818" target="_blank" rel="noopener">Full list on ORCID <span aria-hidden="true">→</span></a>
+        </p>
+
+        <!-- EDIT: talks & posters (newest first) -->
+        <div class="talks reveal">
+          <h3>Talks &amp; posters</h3>
+          <ol class="timeline">
+            <li><span class="tl-year">2025</span><span class="tl-text"><strong>Poster</strong> · <em>EXOZIPPy: A Python Adaptation of the Exoplanet Modeling Code EXOFASTv2</em>, Astrobiology Graduate Conference, Boulder, CO</span></li>
+            <li><span class="tl-year">2025</span><span class="tl-text"><strong>Poster</strong> · <em>EXOZIPPy: A Python translation of EXOFASTv2 to simultaneously model stars and planets</em>, 245th Meeting of the American Astronomical Society, National Harbor, MD</span></li>
+            <li><span class="tl-year">2024</span><span class="tl-text"><strong>Talk</strong> · <em>Simulating the Effects of Outer Giant Planets on Inner Small Planets with In Situ Formation Models</em>, 9th Emerging Researchers in Exoplanet Science Symposium, Ithaca, NY</span></li>
+            <li><span class="tl-year">2024</span><span class="tl-text"><strong>Talk</strong> · <em>Simulating the Effects of Outer Giant Planets on Inner Super-Earths with In Situ Formation Models</em>, 55th Annual Meeting of the Division on Dynamical Astronomy, Toronto, Canada</span></li>
+            <li><span class="tl-year">2024</span><span class="tl-text"><strong>Poster</strong> · <em>EXOZIPPy: A Python translation of EXOFASTv2 to simultaneously model stars and planets</em>, 55th Annual Meeting of the Division on Dynamical Astronomy, Toronto, Canada</span></li>
+            <li><span class="tl-year">2023</span><span class="tl-text"><strong>Poster</strong> · <em>Simulating the Effects of Outer Giant Planets on Inner Super-Earths with In Situ Formation Models</em>, 54th Annual Meeting of the Division on Dynamical Astronomy, Lansing, MI</span></li>
+            <li><span class="tl-year">2021</span><span class="tl-text"><strong>Invited seminar</strong> · <em>Simulating the Effects of Outer Giant Planets on Inner Super-Earths with In Situ Formation Models</em>, Exoplanets, Star and Planet Formation Seminar Series, Space Telescope Science Institute, virtual</span></li>
+            <li><span class="tl-year">2021</span><span class="tl-text"><strong>Poster</strong> · <em>Simulating the Effects of Outer Giant Planets on Inner Small Planets with In Situ Formation Models</em>, 6th Emerging Researchers in Exoplanet Science Symposium, virtual</span></li>
+            <li><span class="tl-year">2021</span><span class="tl-text"><strong>Poster</strong> · <em>Simulating the Effects of Outer Giant Planets on Inner Super-Earths with In Situ Formation Models</em>, 52nd Annual Meeting of the Division on Dynamical Astronomy, virtual</span></li>
+            <li><span class="tl-year">2021</span><span class="tl-text"><strong>Lunch talk</strong> · <em>Simulating the Effects of Outer Giant Planets on Inner Super-Earths with In Situ Formation Models</em>, Department of Astronomy and Astrophysics, Pennsylvania State University, virtual</span></li>
+            <li><span class="tl-year">2020</span><span class="tl-text"><strong>Lunch talk</strong> · <em>Forming Diverse Super-Earth Systems In Situ (MacDonald et al. 2020)</em>, Department of Astronomy and Astrophysics, Pennsylvania State University, virtual</span></li>
+            <li><span class="tl-year">2018</span><span class="tl-text"><strong>Invited talk</strong> · <em>Uncertainty: Where does it come from and how do we represent it in our data?</em>, Measurement Bootcamp, University of Maryland, Baltimore County Joint Center for Earth System Technology</span></li>
+            <li><span class="tl-year">2017</span><span class="tl-text"><strong>Talk</strong> · <em>Violent Outbursts of Young Stars: UV Analysis of FUor HBC 722</em>, Space Astronomy Summer Program Student Presentations, Space Telescope Science Institute, Baltimore, MD</span></li>
+            <li><span class="tl-year">2016</span><span class="tl-text"><strong>Talk</strong> · <em>A Search for Short-period Rocky Planets around WDs with COS</em>, National Capital Area Disks Meeting 6, Washington, D.C.</span></li>
+            <li><span class="tl-year">2016</span><span class="tl-text"><strong>Poster</strong> · <em>A Search for Rocky Planets in Close-in Orbits Around White Dwarfs</em>, 227th Meeting of the American Astronomical Society, Kissimmee, FL</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== TEACHING =============================== -->
+    <section class="section section-tint" id="teaching">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker reveal">04 · Teaching &amp; Mentoring</p>
+          <h2 class="reveal">Learning is a <em>shared</em> experiment</h2>
+        </header>
+
+        <div class="teaching-grid">
+          <!-- EDIT: a sentence or two from your teaching philosophy -->
+          <blockquote class="philosophy reveal">
+            <p>“Repeatedly using a qualifying word such as 'smart' to describe students forces them to internalize the idea that intelligence is just something you either have or you don’t.  Once your students have reached your classroom, this damage has probably already been done.  However, it is important to vocally, and enthusiastically, combat these thoughts and establish that yes, <em>anyone</em> and <em>everyone</em> can succeed.”</p>
+            <footer>From my teaching philosophy</footer>
+          </blockquote>
+
+          <div class="courses">
+            <!-- EDIT: one <article> per course or teaching role -->
+            <article class="course card reveal">
+              <div class="course-top">
+                <span class="badge">Instructor</span>
+                <span class="course-when">Fall 2022</span>
+              </div>
+              <h3>ASTRO 297: Astronomy Communication</h3>
+              <p>Penn State · Verbal and written communication skills applied to technical topics in astronomy. Added “professionalism” to the final grade and wrote detailed rubrics for every assignment to set clear expectations.</p>
+            </article>
+
+            <article class="course card reveal">
+              <div class="course-top">
+                <span class="badge badge-alt">Graduate Teaching Assistant</span>
+                <span class="course-when">2020 – present</span>
+              </div>
+              <h3>Astronomy and Astrophysics courses</h3>
+              <p>Penn State · 15+ semesters of grading and teaching, from large (&gt;300 students) introductory courses to small (&lt;15 students) upper-level and graduate courses. Ran weekly online planetarium shows with Stellarium, Fall 2020 – Spring 2021.</p>
+            </article>
+
+            <article class="course card reveal">
+              <div class="course-top">
+                <span class="badge badge-alt">Guest Lecturer</span>
+                <span class="course-when">Fall 2023</span>
+              </div>
+              <h3>PHYS 1961: Professional Development for Physicists</h3>
+              <p>Rensselaer Polytechnic Institute · “Science, Objectivity, and Diversity,” a lecture and group discussion on how scientific research can be influenced by the beliefs and biases of scientists</p>
+            </article>
+
+            <article class="course card reveal">
+              <div class="course-top">
+                <span class="badge badge-alt">Guest Lecturer</span>
+                <span class="course-when">Fall 2020</span>
+              </div>
+              <h3>ASTRO 5: The Sky and Planets</h3>
+              <p>Penn State · “SETI: The Search for Extraterrestrial Intelligence,” a lecture on the history and current state of the field</p>
+            </article>
+          </div>
+        </div>
+
+        <!--
+          EDIT: uncomment and fill in students you've mentored and where they went
+        <div class="mentoring card reveal">
+          <h3>Mentoring</h3>
+          <ul class="mentees">
+            <li><strong>[Student name]</strong>, undergraduate researcher (2024–25) → now [grad program / job]</li>
+            <li><strong>[Student name]</strong>, summer research intern (2024), [program name]</li>
+            <li><strong>[Student name]</strong>, M.S. thesis co-advisor (2023–24)</li>
+          </ul>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- =============================== SERVICE =============================== -->
+    <section class="section" id="service">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker reveal">05 · Service &amp; Outreach</p>
+          <h2 class="reveal">Building a <em>better</em> scientific community</h2>
+        </header>
+
+        <div class="service-grid">
+          <!-- EDIT: keep, rename, or delete categories as needed -->
+          <article class="service card reveal">
+            <h3><span class="service-icon" aria-hidden="true">✦</span> Climate &amp; Diversity Committee</h3>
+            <p class="service-meta">Penn State Astronomy and Astrophysics · 2020 – present</p>
+            <ul>
+              <li>Created the “Astro+ Research Showcase” to introduce and connect undergraduates to research opportunities at Penn State; organized 10 showcases and designed the materials so the events can continue without me</li>
+              <li>Organized and ran three undergraduate town halls, then wrote a report turning the comments into actionable initiatives</li>
+              <li>Organized an event to write biographies of scientists with underrepresented minoritized identities, made into posters displayed in the department</li>
+            </ul>
+          </article>
+
+          <article class="service card reveal">
+            <h3><span class="service-icon" aria-hidden="true">✦</span> Undergraduate Curriculum Committee</h3>
+            <p class="service-meta">Penn State Astronomy and Astrophysics · 2021 – 2025</p>
+            <ul>
+              <li>Contributed significantly to the curricular development of a new “Astronomy” major, now in the final stages of approval</li>
+              <li>Helped develop the <a href="https://sites.psu.edu/astronomyresearch/" target="_blank" rel="noopener">STAR (Students Together for Astronomy Research) Program</a>, a semester-long research project for course credit, and wrote its grading rubric and program outline</li>
+              <li>Wrote recommendations for changes to the undergraduate curriculum based on DFW rates, town hall reports, and the Astronomy Decadal Survey</li>
+            </ul>
+          </article>
+
+          <article class="service card reveal">
+            <h3><span class="service-icon" aria-hidden="true">✦</span> Graduate Program Committee</h3>
+            <p class="service-meta">Penn State Astronomy and Astrophysics · 2020 – 2021</p>
+            <ul>
+              <li>Helped organize a survey of graduate students' opinions and suggestions on the existing qualifying exam</li>
+              <li>Wrote recommendations for changes to the qualifying exam based on the survey results and presented them to the larger committee</li>
+            </ul>
+          </article>
+
+          <article class="service card reveal">
+            <h3><span class="service-icon" aria-hidden="true">✦</span> Community &amp; outreach</h3>
+            <ul>
+              <li>Pen pal, Letters to a Pre-Scientist (2024–25, 2025–26)</li>
+              <li>Invited speaker, Central Pennsylvania Observers, State College and Cherry Springs, PA (Apr 2022, Sep 2022, Sep 2024)</li>
+              <li>Invited speaker, STEM Research &amp; Innovation Symposium, Baltimore, MD (May 2024)</li>
+              <li>Invited speaker, STEM Student Leadership Conference, Baltimore, MD (May 2024)</li>
+              <li>Speaker, Astronomy on Tap, State College, PA (Aug 2021, Mar 2023)</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- EDIT: honors & awards (newest first) -->
+        <div class="awards reveal">
+          <h3>Honors &amp; awards</h3>
+          <ol class="timeline">
+            <li><span class="tl-year">2025</span><span class="tl-text">Dean's Climate and Diversity Group Award (Department of Astronomy and Astrophysics Climate and Diversity Committee), Eberly College of Science, Pennsylvania State University</span></li>
+            <li><span class="tl-year">2025</span><span class="tl-text">Honorable Mention, Chambliss Astronomy Achievement Student Award, 245th Meeting of the American Astronomical Society</span></li>
+            <li><span class="tl-year">2023</span><span class="tl-text">Zaccheus Daniel Award, Pennsylvania State University</span></li>
+            <li><span class="tl-year">2022</span><span class="tl-text">Climate Award, Department of Astronomy and Astrophysics, Pennsylvania State University</span></li>
+            <li><span class="tl-year">2020</span><span class="tl-text">Homer F. Braddock Scholarship in Biology, Chemistry, and Physics, Eberly College of Science, Pennsylvania State University</span></li>
+            <li><span class="tl-year">2019</span><span class="tl-text">University Graduate Fellowship, Pennsylvania State University</span></li>
+            <li><span class="tl-year">2019</span><span class="tl-text">Cecilia Payne-Gaposchkin Science Achievement Graduate Scholarship in Astronomy, Eberly College of Science, Pennsylvania State University</span></li>
+            <li><span class="tl-year">2018</span><span class="tl-text">College of Natural and Mathematical Sciences Scholars Program, University of Maryland, Baltimore County</span></li>
+            <li><span class="tl-year">2018</span><span class="tl-text">Outstanding Undergraduate Learning Assistant in Physics, Department of Physics, University of Maryland, Baltimore County</span></li>
+            <li><span class="tl-year">2017</span><span class="tl-text">Outstanding Undergraduate Learning Assistant in Physics, Department of Physics, University of Maryland, Baltimore County</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== CONTACT =============================== -->
+    <section class="section contact" id="contact">
+      <div class="container contact-inner">
+        <p class="section-kicker reveal">06 · Contact</p>
+        <h2 class="reveal">Let's <em>talk</em> science.</h2>
+        <p class="section-intro reveal">
+          I'm always happy to hear from prospective students, collaborators, and curious people.
+        </p>
+        <!-- EDIT: your email address -->
+        <a class="btn btn-primary btn-lg reveal" href="mailto:phoebe.sandhaus@gmail.com">phoebe.sandhaus@gmail.com</a>
+
+        <!-- EDIT: profile links. Templates for Scholar, LinkedIn, and Bluesky are in the comment below the list. -->
+        <ul class="socials reveal" aria-label="Profiles">
+          <li><a href="https://orcid.org/0000-0002-6019-4818" target="_blank" rel="noopener" aria-label="ORCID"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M9 10v7M9 7v.01M12.5 10v7h2a3.5 3.5 0 0 0 0-7h-2Z"/></svg><span>ORCID</span></a></li>
+          <li><a href="https://github.com/PhoebeSandhaus" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>GitHub</span></a></li>
+        </ul>
+        <!--
+          Move any of these into the list above and replace # with your profile URL:
+          <li><a href="#" aria-label="Google Scholar"><svg viewBox="0 0 24 24"><path d="M12 3 2 9.5l10 6.5 10-6.5L12 3Z"/><path d="M6 12.5V17c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg><span>Scholar</span></a></li>
+          <li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><span>LinkedIn</span></a></li>
+          <li><a href="#" aria-label="Bluesky"><svg viewBox="0 0 24 24"><path d="M12 11c-1.5-3-5-7-7.5-7S3 7 3.5 9s2 3.5 5 3.5C5 13.5 5 16 7 18s4-1 5-4c1 3 3 6 5 4s2-4.5-1.5-5.5c3 0 4.5-1.5 5-3.5S22 4 19.5 4 13.5 8 12 11Z"/></svg><span>Bluesky</span></a></li>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Phoebe Sandhaus</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
