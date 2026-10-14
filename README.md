@@ -36,3 +36,7 @@ python3 -m http.server 8000
    ```
 3. On GitHub, go to **Settings → Pages**. Set *Source* to **Deploy from a branch**, then choose branch `main` and folder `/ (root)`.
 4. After a minute or two the site is live at **https://phoebesandhaus.github.io**.
+5. To publish future changes to the website, run:
+   ```sh
+   git add -A && git commit -m "Update site" && git push
+   ```
